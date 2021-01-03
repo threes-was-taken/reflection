@@ -1,0 +1,404 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="498829e3-d4e4-4b98-8a74-9ec741731f29" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__junit_junit_4_12.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hamcrest_hamcrest_core_1_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/reflection.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/be/kdg/distrib/communication/MessageManager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/be/kdg/distrib/communication/MessageReaderWriter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/be/kdg/distrib/communication/MethodCallMessage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/be/kdg/distrib/communication/NameValuePair.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/be/kdg/distrib/communication/NetworkAddress.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/be/kdg/distrib/skeletonFactory/Skeleton.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/be/kdg/distrib/stubFactory/StubFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/be/kdg/distrib/stubFactory/StubInvocationHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/be/kdg/distrib/TestSkeletonFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/be/kdg/distrib/TestStubFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/be/kdg/distrib/testclasses/TestImplementation.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/be/kdg/distrib/testclasses/TestInterface.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/be/kdg/distrib/testclasses/TestInterface2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/be/kdg/distrib/testclasses/TestInterface3.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/be/kdg/distrib/testclasses/TestObject.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/be/kdg/distrib/testclasses/TestObject2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/be/kdg/distrib/testclasses/TestSkeleton.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/be/kdg/distrib/communication/MessageManager.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/be/kdg/distrib/communication/MessageReaderWriter.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/be/kdg/distrib/communication/MethodCallMessage.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/be/kdg/distrib/communication/NameValuePair.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/be/kdg/distrib/communication/NetworkAddress.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/be/kdg/distrib/skeletonFactory/Skeleton.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/be/kdg/distrib/stubFactory/StubFactory.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/be/kdg/distrib/stubFactory/StubInvocationHandler.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/test-classes/be/kdg/distrib/TestSkeletonFactory$MyLambda.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/test-classes/be/kdg/distrib/TestSkeletonFactory.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/test-classes/be/kdg/distrib/TestStubFactory.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/test-classes/be/kdg/distrib/testclasses/TestImplementation.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/test-classes/be/kdg/distrib/testclasses/TestInterface.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/test-classes/be/kdg/distrib/testclasses/TestInterface2.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/test-classes/be/kdg/distrib/testclasses/TestInterface3.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/test-classes/be/kdg/distrib/testclasses/TestObject.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/test-classes/be/kdg/distrib/testclasses/TestObject2.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/test-classes/be/kdg/distrib/testclasses/TestSkeleton.class" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CodeStyleSettingsInfer">
+    <option name="done" value="true" />
+  </component>
+  <component name="CreatePatchCommitExecutor">
+    <option name="PATCH_PATH" value="" />
+  </component>
+  <component name="FavoritesManager">
+    <favorites_list name="reflection" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>object</find>
+      <find>bool</find>
+      <find>string</find>
+      <find>s</find>
+    </findStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectCodeStyleSettingsMigration">
+    <option name="version" value="1" />
+  </component>
+  <component name="ProjectId" id="1SEpQ93CnnzL3nlcNBn8zya24c7" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="GoToClass.includeLibraries" value="false" />
+    <property name="GoToClass.toSaveIncludeLibraries" value="false" />
+    <property name="GoToFile.includeJavaFiles" value="false" />
+    <property name="MemberChooser.copyJavadoc" value="false" />
+    <property name="MemberChooser.showClasses" value="true" />
+    <property name="MemberChooser.sorted" value="false" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="extract.method.default.visibility" value="private" />
+    <property name="js.eslint.eslintPackage" value="" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="be.kdg.distrib.stubFactory" />
+      <recent name="be.kdg.stubFactory.testclasses" />
+      <recent name="be.kdg.stubFactory" />
+      <recent name="be.kdg.componenten.stubFactory" />
+    </key>
+  </component>
+  <component name="RunManager" selected="JUnit.TestStubFactory">
+    <configuration default="true" type="Applet">
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="AndroidRunConfigurationType" factoryName="Android App">
+      <option name="DEPLOY" value="true" />
+      <option name="DEPLOY_APK_FROM_BUNDLE" value="false" />
+      <option name="DEPLOY_AS_INSTANT" value="false" />
+      <option name="ARTIFACT_NAME" value="" />
+      <option name="PM_INSTALL_OPTIONS" value="" />
+      <option name="DYNAMIC_FEATURES_DISABLED_LIST" value="" />
+      <option name="ACTIVITY_EXTRA_FLAGS" value="" />
+      <option name="MODE" value="default_activity" />
+      <option name="CLEAR_LOGCAT" value="false" />
+      <option name="SHOW_LOGCAT_AUTOMATICALLY" value="true" />
+      <option name="SKIP_NOOP_APK_INSTALLATIONS" value="true" />
+      <option name="FORCE_STOP_RUNNING_APP" value="true" />
+      <option name="TARGET_SELECTION_MODE" value="SHOW_DIALOG" />
+      <option name="DEBUGGER_TYPE" value="Java" />
+      <Java />
+      <Profilers>
+        <option name="ADVANCED_PROFILING_ENABLED" value="false" />
+        <option name="STARTUP_CPU_PROFILING_ENABLED" value="false" />
+        <option name="STARTUP_CPU_PROFILING_CONFIGURATION_NAME" value="Sample Java Methods" />
+      </Profilers>
+      <option name="DEEP_LINK" value="" />
+      <option name="ACTIVITY_CLASS" value="" />
+      <method v="2">
+        <option name="Android.Gradle.BeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="AndroidTestRunConfigurationType" factoryName="Android Instrumented Tests">
+      <option name="TESTING_TYPE" value="0" />
+      <option name="METHOD_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="INSTRUMENTATION_RUNNER_CLASS" value="" />
+      <option name="EXTRA_OPTIONS" value="" />
+      <option name="INCLUDE_GRADLE_EXTRA_OPTIONS" value="true" />
+      <option name="CLEAR_LOGCAT" value="false" />
+      <option name="SHOW_LOGCAT_AUTOMATICALLY" value="true" />
+      <option name="SKIP_NOOP_APK_INSTALLATIONS" value="true" />
+      <option name="FORCE_STOP_RUNNING_APP" value="true" />
+      <option name="TARGET_SELECTION_MODE" value="SHOW_DIALOG" />
+      <option name="DEBUGGER_TYPE" value="Java" />
+      <Java />
+      <Profilers>
+        <option name="ADVANCED_PROFILING_ENABLED" value="false" />
+        <option name="STARTUP_CPU_PROFILING_ENABLED" value="false" />
+        <option name="STARTUP_CPU_PROFILING_CONFIGURATION_NAME" value="Sample Java Methods" />
+      </Profilers>
+      <method v="2">
+        <option name="Make" enabled="true" />
+        <option name="Android.Gradle.BeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="StartClient" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="be.kdg.componenten.client.StartClient" />
+      <module name="reflection" />
+      <option name="PROGRAM_PARAMETERS" value="127.0.0.1 39672" />
+      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="be.kdg.componenten.client.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="Application" factoryName="Application">
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestSkeletonFactory" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="reflection" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="be.kdg.distrib.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="be.kdg.distrib" />
+      <option name="MAIN_CLASS_NAME" value="be.kdg.distrib.TestSkeletonFactory" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestStubFactory" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="reflection" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="be.kdg.distrib.testclasses.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="be.kdg.distrib" />
+      <option name="MAIN_CLASS_NAME" value="be.kdg.distrib.TestStubFactory" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestStubFactory.testCreateClassWithRightMethods" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="reflection" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="be.kdg.distrib.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="be.kdg.distrib" />
+      <option name="MAIN_CLASS_NAME" value="be.kdg.distrib.TestStubFactory" />
+      <option name="METHOD_NAME" value="testCreateClassWithRightMethods" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="JUnit" factoryName="JUnit">
+      <option name="TEST_OBJECT" value="class" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="TestNG">
+      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType">
+      <module name="" />
+      <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m -ea" />
+      <option name="PROGRAM_PARAMETERS" />
+      <predefined_log_file enabled="true" id="idea.log" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="js.build_tools.gulp">
+      <node-interpreter>project</node-interpreter>
+      <node-options />
+      <gulpfile />
+      <tasks />
+      <arguments />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Application.StartClient" />
+      <item itemvalue="JUnit.TestStubFactory" />
+      <item itemvalue="JUnit.TestSkeletonFactory" />
+      <item itemvalue="JUnit.TestStubFactory.testCreateClassWithRightMethods" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.TestStubFactory" />
+        <item itemvalue="JUnit.TestStubFactory.testCreateClassWithRightMethods" />
+        <item itemvalue="JUnit.TestSkeletonFactory" />
+        <item itemvalue="Application.StartClient" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="498829e3-d4e4-4b98-8a74-9ec741731f29" name="Default" comment="" />
+      <created>1480942917264</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1480942917264</updated>
+      <workItem from="1480942926020" duration="7428000" />
+      <workItem from="1481102526195" duration="2958000" />
+      <workItem from="1481113578654" duration="40000" />
+      <workItem from="1481122401787" duration="5599000" />
+      <workItem from="1481196276641" duration="6711000" />
+      <workItem from="1481268499232" duration="19564000" />
+      <workItem from="1481371731637" duration="2866000" />
+      <workItem from="1481721840094" duration="187000" />
+      <workItem from="1481730185499" duration="63000" />
+      <workItem from="1481735088150" duration="28000" />
+      <workItem from="1482413831963" duration="15000" />
+      <workItem from="1512980645581" duration="1438000" />
+      <workItem from="1513063472827" duration="1506000" />
+      <workItem from="1513592901314" duration="19000" />
+      <workItem from="1540293472320" duration="539000" />
+      <workItem from="1543845676950" duration="431000" />
+      <workItem from="1543846474150" duration="433000" />
+      <workItem from="1543913550968" duration="1336000" />
+      <workItem from="1543922277885" duration="798000" />
+      <workItem from="1543994403864" duration="264000" />
+      <workItem from="1544000000213" duration="1252000" />
+      <workItem from="1544101907235" duration="102000" />
+      <workItem from="1544452082736" duration="6000" />
+      <workItem from="1545057118625" duration="1196000" />
+      <workItem from="1545119488316" duration="3431000" />
+      <workItem from="1545204724446" duration="612000" />
+      <workItem from="1545300031850" duration="41000" />
+      <workItem from="1571138598968" duration="2481000" />
+      <workItem from="1575906772719" duration="74000" />
+      <workItem from="1575968329708" duration="81000" />
+      <workItem from="1609673335489" duration="1185000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TestHistory">
+    <history-entry file="TestSkeletonFactory - 2016.12.10 at 13h 24m 27s.xml">
+      <configuration name="TestSkeletonFactory" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestSkeletonFactory - 2016.12.10 at 13h 59m 38s.xml">
+      <configuration name="TestSkeletonFactory" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestStubFactory - 2016.12.09 at 15h 20m 04s.xml">
+      <configuration name="TestStubFactory" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestStubFactory - 2016.12.09 at 15h 36m 54s.xml">
+      <configuration name="TestStubFactory" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestStubFactory - 2016.12.09 at 15h 37m 53s.xml">
+      <configuration name="TestStubFactory" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestStubFactory - 2016.12.09 at 15h 43m 19s.xml">
+      <configuration name="TestStubFactory" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestStubFactory - 2016.12.09 at 15h 49m 52s.xml">
+      <configuration name="TestStubFactory" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestStubFactory - 2016.12.10 at 13h 15m 55s.xml">
+      <configuration name="TestStubFactory" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestStubFactory - 2016.12.10 at 13h 24m 20s.xml">
+      <configuration name="TestStubFactory" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestStubFactory - 2016.12.10 at 13h 59m 43s.xml">
+      <configuration name="TestStubFactory" configurationId="JUnit" />
+    </history-entry>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="Vcs.Log.UiProperties">
+    <option name="RECENTLY_FILTERED_USER_GROUPS">
+      <collection />
+    </option>
+    <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+      <collection />
+    </option>
+  </component>
+  <component name="antWorkspaceConfiguration">
+    <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
+    <option name="FILTER_TARGETS" value="false" />
+  </component>
+</project>
