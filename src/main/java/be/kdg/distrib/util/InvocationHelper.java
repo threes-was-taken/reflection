@@ -13,7 +13,7 @@ import static be.kdg.distrib.util.ClassChecker.checkSimpleClass;
 import static be.kdg.distrib.util.ClassChecker.getWrapClass;
 
 public class InvocationHelper {
-    public static Map<String, String> getResponseParams(Map<String, String> parameters, String classPrefix) {
+    public static Map<String, String> getParamsFromPrefix(Map<String, String> parameters, String classPrefix) {
         Map<String, String> responseParams = new HashMap<>();
 
         parameters.forEach((k, v) ->{
@@ -30,7 +30,7 @@ public class InvocationHelper {
         return responseParams;
     }
 
-    public static Map<String, String> getParams(Parameter[] parameters, Object[] args) throws IllegalAccessException {
+    public static Map<String, String> getParamsFromArgs(Parameter[] parameters, Object[] args) throws IllegalAccessException {
         //when no params/ args, return empty map (for void functions)
         if (parameters.length == 0 || args == null){
             return Collections.emptyMap();
@@ -42,12 +42,12 @@ public class InvocationHelper {
             Parameter p = parameters[i];
             Object o = args[i];
 
-            paramsMap.putAll(mapObject(p.getName(), o));
+            paramsMap.putAll(parseObjectToMap(p.getName(), o));
         }
         return paramsMap;
     }
 
-    public static Map<String, String> mapObject(String name, Object o) throws IllegalAccessException {
+    public static Map<String, String> parseObjectToMap(String name, Object o) throws IllegalAccessException {
         Map<String, String> objectMap = new HashMap<>();
 
         if (checkSimpleClass(o.getClass())){
@@ -68,7 +68,7 @@ public class InvocationHelper {
         return objectMap;
     }
 
-    public static Object parseInvokeInstance(Map<String, String> args, Class<?> returnType) {
+    public static Object createObjectFromType(Map<String, String> args, Class<?> returnType) {
         Object returnObject = null;
         if (returnType.equals(Void.TYPE)){
             return null;
@@ -103,10 +103,10 @@ public class InvocationHelper {
                 objectFields) {
             f.setAccessible(true);
 
-            Map<String, String> objectParams = getResponseParams(args, f.getName());
+            Map<String, String> objectParams = getParamsFromPrefix(args, f.getName());
 
             //recursion if field is of a complex object type
-            Object o = parseInvokeInstance(objectParams, f.getType());
+            Object o = createObjectFromType(objectParams, f.getType());
 
             try{
                 f.set(returnObject, o);

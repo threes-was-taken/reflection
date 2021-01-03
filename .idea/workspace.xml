@@ -7,13 +7,13 @@
     <list default="true" id="498829e3-d4e4-4b98-8a74-9ec741731f29" name="Default" comment="">
       <change afterPath="$PROJECT_DIR$/src/main/java/be/kdg/distrib/skeletonFactory/SkeletonFactory.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/main/java/be/kdg/distrib/util/ClassChecker.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/be/kdg/distrib/util/InvocationHelper.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/reflection.iml" beforeDir="false" afterPath="$PROJECT_DIR$/reflection.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/be/kdg/distrib/skeletonFactory/SkeletonInvocationHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/be/kdg/distrib/skeletonFactory/SkeletonInvocationHandler.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/be/kdg/distrib/stubFactory/StubInvocationHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/be/kdg/distrib/stubFactory/StubInvocationHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/be/kdg/distrib/util/InvocationHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/be/kdg/distrib/util/InvocationHelper.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/be/kdg/distrib/TestSkeletonFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/be/kdg/distrib/TestSkeletonFactory.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/be/kdg/distrib/communication/MessageManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/be/kdg/distrib/communication/MessageManager.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/be/kdg/distrib/communication/MessageReaderWriter.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/be/kdg/distrib/communication/MessageReaderWriter.class" afterDir="false" />
@@ -102,7 +102,7 @@
       <recent name="be.kdg.componenten.stubFactory" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.TestSkeletonFactory">
+  <component name="RunManager" selected="JUnit.TestSkeletonFactory.testMessageWithWrongNumberOfParams">
     <configuration default="true" type="Applet">
       <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
       <method v="2">
@@ -161,21 +161,6 @@
         <option name="Android.Gradle.BeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="StartClient" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="be.kdg.componenten.client.StartClient" />
-      <module name="reflection" />
-      <option name="PROGRAM_PARAMETERS" value="127.0.0.1 39672" />
-      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="be.kdg.componenten.client.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <method v="2">
@@ -206,6 +191,23 @@
       <option name="PACKAGE_NAME" value="be.kdg.distrib" />
       <option name="MAIN_CLASS_NAME" value="be.kdg.distrib.TestSkeletonFactory" />
       <option name="TEST_OBJECT" value="class" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestSkeletonFactory.testMessageWithWrongNumberOfParams" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="reflection" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="be.kdg.distrib.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="be.kdg.distrib" />
+      <option name="MAIN_CLASS_NAME" value="be.kdg.distrib.TestSkeletonFactory" />
+      <option name="METHOD_NAME" value="testMessageWithWrongNumberOfParams" />
+      <option name="TEST_OBJECT" value="method" />
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -296,19 +298,19 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Application.StartClient" />
       <item itemvalue="JUnit.TestStubFactory" />
       <item itemvalue="JUnit.TestSkeletonFactory" />
       <item itemvalue="JUnit.TestStubFactory.testCreateClassWithRightMethods" />
       <item itemvalue="JUnit.TestSkeletonFactory.testVoidMethod" />
+      <item itemvalue="JUnit.TestSkeletonFactory.testMessageWithWrongNumberOfParams" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.TestSkeletonFactory.testMessageWithWrongNumberOfParams" />
         <item itemvalue="JUnit.TestSkeletonFactory" />
         <item itemvalue="JUnit.TestSkeletonFactory.testVoidMethod" />
         <item itemvalue="JUnit.TestStubFactory" />
         <item itemvalue="JUnit.TestStubFactory.testCreateClassWithRightMethods" />
-        <item itemvalue="Application.StartClient" />
       </list>
     </recent_temporary>
   </component>
@@ -354,7 +356,7 @@
       <workItem from="1575906772719" duration="74000" />
       <workItem from="1575968329708" duration="81000" />
       <workItem from="1609673335489" duration="1185000" />
-      <workItem from="1609674557951" duration="11974000" />
+      <workItem from="1609674557951" duration="13990000" />
     </task>
     <servers />
   </component>

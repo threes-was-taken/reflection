@@ -52,33 +52,41 @@ public class SkeletonInvocationHandler implements Skeleton{
 
     @Override
     public void handleRequest(MethodCallMessage message) {
-        Method requestMethod = methodMap.get(message.getMethodName());
-        MethodCallMessage response = new MethodCallMessage(this.serverAddress, "result");
-
-        Object[] requestArgs = new Object[requestMethod.getParameters().length];
-
-        for (int i = 0; i < requestMethod.getParameters().length; i++) {
-            Parameter p = requestMethod.getParameters()[i];
-
-            Map<String, String> params = getResponseParams(message.getParameters(), p.getName());
-
-            if (params.size() == 0) throw new IllegalArgumentException("could not recreate parameter");
-
-            Object arg = parseInvokeInstance(params, p.getType());
-            requestArgs[i] = arg;
-        }
-
         try {
+            System.out.printf("Method %s called", message.getMethodName());
+            Method requestMethod = methodMap.get(message.getMethodName());
+            MethodCallMessage response = new MethodCallMessage(this.serverAddress, "result");
+
+            Object[] requestArgs = new Object[requestMethod.getParameters().length];
+            int counter = 0;
+
+            for (int i = 0; i < requestMethod.getParameters().length; i++) {
+                Parameter p = requestMethod.getParameters()[i];
+
+                Map<String, String> params = getParamsFromPrefix(message.getParameters(), p.getName());
+
+                if (params.size() == 0) throw new IllegalArgumentException("could not recreate parameter");
+
+                Object arg = createObjectFromType(params, p.getType());
+                requestArgs[i] = arg;
+                counter += params.size();
+            }
+
+            if (counter != message.getParameters().size()) throw new IllegalArgumentException("More parameters than the initial message parameters amount");
+
             Object responseObj = requestMethod.invoke(serverImplementation, requestArgs);
+
+            //Void method test
+            if (requestMethod.getReturnType().equals(Void.TYPE)) {
+                response.setParameter("result", "Ok");
+            } else {
+                parseObjectToMap("result", responseObj).forEach(response::setParameter);
+            }
+
+            this.messageManager.send(response, message.getOriginator());
         } catch (IllegalAccessException | InvocationTargetException e) {
-            System.err.println(e.getMessage());
+            System.err.println("couldn't handle req -> " + e.getMessage());
+            throw new RuntimeException(e.getMessage());
         }
-
-        //Void method test
-        if (requestMethod.getReturnType().equals(Void.TYPE)){
-            response.setParameter("result", "Ok");
-        }
-
-        this.messageManager.send(response, message.getOriginator());
     }
 }

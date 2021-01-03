@@ -6,12 +6,8 @@ import be.kdg.distrib.communication.MethodCallMessage;
 import be.kdg.distrib.communication.NetworkAddress;
 
 import java.lang.reflect.*;
-import java.util.Collections;
-import java.util.HashMap;
 import java.util.Map;
 
-import static be.kdg.distrib.util.ClassChecker.checkSimpleClass;
-import static be.kdg.distrib.util.ClassChecker.getWrapClass;
 import static be.kdg.distrib.util.InvocationHelper.*;
 
 public class StubInvocationHandler implements InvocationHandler {
@@ -36,15 +32,15 @@ public class StubInvocationHandler implements InvocationHandler {
 
         MethodCallMessage response = this.messageManager.wReceive();
 
-        Map<String, String> responseParams = getResponseParams(response.getParameters(), "result");
+        Map<String, String> responseParams = getParamsFromPrefix(response.getParameters(), "result");
 
-        return parseInvokeInstance(responseParams, method.getReturnType());
+        return createObjectFromType(responseParams, method.getReturnType());
     }
 
     private MethodCallMessage initMethodCall(Object[] args, Method method, NetworkAddress networkAddress) throws IllegalAccessException {
         MethodCallMessage callMessage = new MethodCallMessage(networkAddress, method.getName());
 
-        Map<String, String> messageParams = getParams(method.getParameters(), args);
+        Map<String, String> messageParams = getParamsFromArgs(method.getParameters(), args);
 
         messageParams.forEach(callMessage::setParameter);
 
