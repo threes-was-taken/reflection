@@ -24,14 +24,10 @@ public class StubInvocationHandler implements InvocationHandler {
 
     @Override
     public Object invoke(Object proxy, Method method, Object[] args) throws Throwable {
-        System.out.printf("%s invoked\n", method.getName());
-        System.out.printf(" -> %s as return type", method.getReturnType().getSimpleName());
+        System.out.println(method.getName() + " invoked");
+        System.out.printf(" -> %s as return type\n", method.getReturnType().getSimpleName());
 
-        MethodCallMessage callMessage = new MethodCallMessage(this.messageManager.getMyAddress(), method.getName());
-
-        Map<String, String> messageParams = getParams(method.getParameters(), args);
-
-        messageParams.forEach(callMessage::setParameter);
+        MethodCallMessage callMessage = initMethodCall(args, method, this.messageManager.getMyAddress());
 
         callMessage.getParameters().forEach((k,v) -> System.out.printf("\t%s PARAMS: %s = %s\n", callMessage.getMethodName().toUpperCase(), k, v));
 
@@ -42,6 +38,16 @@ public class StubInvocationHandler implements InvocationHandler {
         Map<String, String> responseParams = getResponseParams(response.getParameters(), "result");
 
         return parseInvokeInstance(responseParams, method.getReturnType());
+    }
+
+    private MethodCallMessage initMethodCall(Object[] args, Method method, NetworkAddress networkAddress) throws IllegalAccessException {
+        MethodCallMessage callMessage = new MethodCallMessage(networkAddress, method.getName());
+
+        Map<String, String> messageParams = getParams(method.getParameters(), args);
+
+        messageParams.forEach(callMessage::setParameter);
+
+        return callMessage;
     }
 
     private Map<String, String> getResponseParams(Map<String, String> parameters, String classPrefix) {

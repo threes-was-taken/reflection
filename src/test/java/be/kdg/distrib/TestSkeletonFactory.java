@@ -1,9 +1,7 @@
 package be.kdg.distrib;
 
 import be.kdg.distrib.skeletonFactory.Skeleton;
-/*
 import be.kdg.distrib.skeletonFactory.SkeletonFactory;
-*/
 import be.kdg.distrib.communication.MessageManager;
 import be.kdg.distrib.communication.MethodCallMessage;
 import be.kdg.distrib.communication.NetworkAddress;
@@ -24,9 +22,7 @@ public class TestSkeletonFactory {
     @Before
     public void setup() {
         testImplementation = new TestImplementation();
-/*
         skeleton = (Skeleton) SkeletonFactory.createSkeleton(testImplementation);
-*/
         messageManager = new MessageManager();
         myAddress = messageManager.getMyAddress();
     }
