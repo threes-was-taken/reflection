@@ -24,7 +24,7 @@ public class StubInvocationHandler implements InvocationHandler {
 
     @Override
     public Object invoke(Object proxy, Method method, Object[] args) throws Throwable {
-        System.out.printf("%s invoked", method.getName());
+        System.out.printf("%s invoked\n", method.getName());
         System.out.printf(" -> %s as return type", method.getReturnType().getSimpleName());
 
         MethodCallMessage callMessage = new MethodCallMessage(this.messageManager.getMyAddress(), method.getName());
@@ -48,15 +48,20 @@ public class StubInvocationHandler implements InvocationHandler {
         Map<String, String> responseParams = new HashMap<>();
 
         parameters.forEach((k, v) ->{
-            String pref = k.equals(classPrefix) ? "" : k.substring(classPrefix.length() + 1);
+            //Forgot to check if the key of my param starts with the prefix, this caused an error where the param name of an object ( via recursion )
+            // wasn't met and the substring was too long ( index out of bounds exception )
+            if (k.startsWith(classPrefix)){
 
-            responseParams.put(pref, v);
+                String pref = k.equals(classPrefix) ? "" : k.substring(classPrefix.length() + 1);
+
+                responseParams.put(pref, v);
+            }
         });
 
         return responseParams;
     }
 
-    private Map<String, String> getParams(Parameter[] parameters, Object[] args) {
+    private Map<String, String> getParams(Parameter[] parameters, Object[] args) throws IllegalAccessException {
         //when no params/ args, return empty map (for void functions)
         if (parameters.length == 0 || args == null){
             return Collections.emptyMap();
@@ -70,28 +75,65 @@ public class StubInvocationHandler implements InvocationHandler {
 
             if (checkSimpleClass(o.getClass())){
                 paramsMap.put(p.getName(), String.valueOf(o));
+            }else {
+                Field[] fields = o.getClass().getDeclaredFields();
+
+                for (Field f :
+                        fields) {
+                    f.setAccessible(true);
+
+                    String name = p.getName() + "." + f.getName();
+
+                    paramsMap.put(name, String.valueOf(f.get(o)));
+                }
             }
         }
         return paramsMap;
     }
 
-    private Object parseInvokeInstance(Map<String, String> parameters, Class<?> returnType) {
+    private Object parseInvokeInstance(Map<String, String> args, Class<?> returnType) {
         Object returnObject = null;
         if (returnType.equals(Void.TYPE)){
             return null;
         }
 
         if (checkSimpleClass(returnType)){
-            String val = parameters.get("");
+            Class<?> classWrap = getWrapClass(returnType);
+
+            String val = args.get("");
             try{
-                if (getWrapClass(returnType).equals(Character.class)) return val.charAt(0);
+                if (classWrap.equals(Character.class)) return val.charAt(0);
 
                 Constructor<?> constructor;
-                constructor = getWrapClass(returnType).getConstructor(String.class);
+                constructor = classWrap.getConstructor(String.class);
                 //forgot to access the ctor
                 constructor.setAccessible(true);
                 returnObject =  constructor.newInstance(val);
+                return returnObject;
             } catch (NoSuchMethodException | IllegalAccessException | InvocationTargetException | InstantiationException e) {
+                System.err.println(e.getMessage());
+            }
+        }
+
+        try{
+            returnObject = returnType.getDeclaredConstructor().newInstance();
+        } catch (InstantiationException | IllegalAccessException | NoSuchMethodException | InvocationTargetException e) {
+            System.err.println(e.getMessage());
+        }
+
+        Field[] objectFields = returnType.getDeclaredFields();
+        for (Field f :
+                objectFields) {
+            f.setAccessible(true);
+
+            Map<String, String> objectParams = getResponseParams(args, f.getName());
+
+            //recursion if field is of a complex object type
+            Object o = parseInvokeInstance(objectParams, f.getType());
+
+            try{
+                f.set(returnObject, o);
+            } catch (IllegalAccessException e) {
                 System.err.println(e.getMessage());
             }
         }
