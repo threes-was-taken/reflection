@@ -5,9 +5,13 @@ import be.kdg.distrib.communication.MessageManager;
 import be.kdg.distrib.communication.MethodCallMessage;
 import be.kdg.distrib.communication.NetworkAddress;
 
+import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
+import java.lang.reflect.Parameter;
 import java.util.HashMap;
 import java.util.Map;
+
+import static be.kdg.distrib.util.InvocationHelper.*;
 
 public class SkeletonInvocationHandler implements Skeleton{
     private final Object serverImplementation;
@@ -50,6 +54,25 @@ public class SkeletonInvocationHandler implements Skeleton{
     public void handleRequest(MethodCallMessage message) {
         Method requestMethod = methodMap.get(message.getMethodName());
         MethodCallMessage response = new MethodCallMessage(this.serverAddress, "result");
+
+        Object[] requestArgs = new Object[requestMethod.getParameters().length];
+
+        for (int i = 0; i < requestMethod.getParameters().length; i++) {
+            Parameter p = requestMethod.getParameters()[i];
+
+            Map<String, String> params = getResponseParams(message.getParameters(), p.getName());
+
+            if (params.size() == 0) throw new IllegalArgumentException("could not recreate parameter");
+
+            Object arg = parseInvokeInstance(params, p.getType());
+            requestArgs[i] = arg;
+        }
+
+        try {
+            Object responseObj = requestMethod.invoke(serverImplementation, requestArgs);
+        } catch (IllegalAccessException | InvocationTargetException e) {
+            System.err.println(e.getMessage());
+        }
 
         //Void method test
         if (requestMethod.getReturnType().equals(Void.TYPE)){

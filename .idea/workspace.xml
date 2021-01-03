@@ -6,12 +6,13 @@
   <component name="ChangeListManager">
     <list default="true" id="498829e3-d4e4-4b98-8a74-9ec741731f29" name="Default" comment="">
       <change afterPath="$PROJECT_DIR$/src/main/java/be/kdg/distrib/skeletonFactory/SkeletonFactory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/be/kdg/distrib/skeletonFactory/SkeletonInvocationHandler.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/main/java/be/kdg/distrib/util/ClassChecker.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/be/kdg/distrib/util/InvocationHelper.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/reflection.iml" beforeDir="false" afterPath="$PROJECT_DIR$/reflection.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/be/kdg/distrib/skeletonFactory/SkeletonInvocationHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/be/kdg/distrib/skeletonFactory/SkeletonInvocationHandler.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/be/kdg/distrib/stubFactory/StubInvocationHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/be/kdg/distrib/stubFactory/StubInvocationHandler.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/be/kdg/distrib/TestSkeletonFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/be/kdg/distrib/TestSkeletonFactory.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/be/kdg/distrib/communication/MessageManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/be/kdg/distrib/communication/MessageManager.class" afterDir="false" />
@@ -20,7 +21,6 @@
       <change beforePath="$PROJECT_DIR$/target/classes/be/kdg/distrib/communication/NameValuePair.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/be/kdg/distrib/communication/NameValuePair.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/be/kdg/distrib/communication/NetworkAddress.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/be/kdg/distrib/communication/NetworkAddress.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/be/kdg/distrib/skeletonFactory/Skeleton.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/be/kdg/distrib/skeletonFactory/Skeleton.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/be/kdg/distrib/stubFactory/StubFactory.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/be/kdg/distrib/stubFactory/StubFactory.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/be/kdg/distrib/stubFactory/StubInvocationHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/be/kdg/distrib/stubFactory/StubInvocationHandler.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/be/kdg/distrib/TestSkeletonFactory.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/be/kdg/distrib/TestSkeletonFactory.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/be/kdg/distrib/TestStubFactory.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/be/kdg/distrib/TestStubFactory.class" afterDir="false" />
@@ -211,6 +211,23 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="TestSkeletonFactory.testVoidMethod" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="reflection" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="be.kdg.distrib.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="be.kdg.distrib" />
+      <option name="MAIN_CLASS_NAME" value="be.kdg.distrib.TestSkeletonFactory" />
+      <option name="METHOD_NAME" value="testVoidMethod" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="TestStubFactory" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="reflection" />
       <extension name="coverage">
@@ -283,10 +300,12 @@
       <item itemvalue="JUnit.TestStubFactory" />
       <item itemvalue="JUnit.TestSkeletonFactory" />
       <item itemvalue="JUnit.TestStubFactory.testCreateClassWithRightMethods" />
+      <item itemvalue="JUnit.TestSkeletonFactory.testVoidMethod" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="JUnit.TestSkeletonFactory" />
+        <item itemvalue="JUnit.TestSkeletonFactory.testVoidMethod" />
         <item itemvalue="JUnit.TestStubFactory" />
         <item itemvalue="JUnit.TestStubFactory.testCreateClassWithRightMethods" />
         <item itemvalue="Application.StartClient" />
@@ -335,7 +354,7 @@
       <workItem from="1575906772719" duration="74000" />
       <workItem from="1575968329708" duration="81000" />
       <workItem from="1609673335489" duration="1185000" />
-      <workItem from="1609674557951" duration="9439000" />
+      <workItem from="1609674557951" duration="11974000" />
     </task>
     <servers />
   </component>
