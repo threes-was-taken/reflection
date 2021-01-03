@@ -80,10 +80,10 @@ public class InvocationHelper {
                 f.setAccessible(true);
 
                 //create extended name for complex objects ( e.g. person.age or car.model )
-                String extendedName = name + "." + f.getName();
+                String complexName = name + "." + f.getName();
 
                 //map the object with the extended name as key and the value of the field as the value
-                objectMap.put(extendedName, String.valueOf(f.get(o)));
+                objectMap.put(complexName, String.valueOf(f.get(o)));
             }
         }
 
