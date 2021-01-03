@@ -53,7 +53,6 @@ public class SkeletonInvocationHandler implements Skeleton{
     @Override
     public void handleRequest(MethodCallMessage message) {
         try {
-            System.out.printf("Method %s called", message.getMethodName());
             Method requestMethod = methodMap.get(message.getMethodName());
             MethodCallMessage response = new MethodCallMessage(this.serverAddress, "result");
 

@@ -102,7 +102,7 @@
       <recent name="be.kdg.componenten.stubFactory" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.TestSkeletonFactory.testMessageWithWrongNumberOfParams">
+  <component name="RunManager" selected="JUnit.TestSkeletonFactory">
     <configuration default="true" type="Applet">
       <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
       <method v="2">
@@ -167,15 +167,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
           <option name="containerStateName" value="" />
         </value>
       </option>
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -306,10 +304,10 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.TestSkeletonFactory.testMessageWithWrongNumberOfParams" />
         <item itemvalue="JUnit.TestSkeletonFactory" />
-        <item itemvalue="JUnit.TestSkeletonFactory.testVoidMethod" />
         <item itemvalue="JUnit.TestStubFactory" />
+        <item itemvalue="JUnit.TestSkeletonFactory.testMessageWithWrongNumberOfParams" />
+        <item itemvalue="JUnit.TestSkeletonFactory.testVoidMethod" />
         <item itemvalue="JUnit.TestStubFactory.testCreateClassWithRightMethods" />
       </list>
     </recent_temporary>
@@ -356,7 +354,7 @@
       <workItem from="1575906772719" duration="74000" />
       <workItem from="1575968329708" duration="81000" />
       <workItem from="1609673335489" duration="1185000" />
-      <workItem from="1609674557951" duration="13990000" />
+      <workItem from="1609674557951" duration="14361000" />
     </task>
     <servers />
   </component>
