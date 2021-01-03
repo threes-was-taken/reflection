@@ -37,12 +37,13 @@ public class StubInvocationHandler implements InvocationHandler {
         return createObjectFromType(responseParams, method.getReturnType());
     }
 
+    //Create MethodCallMessage from invoked method with parameters
     private MethodCallMessage initMethodCall(Object[] args, Method method, NetworkAddress networkAddress) throws IllegalAccessException {
         MethodCallMessage callMessage = new MethodCallMessage(networkAddress, method.getName());
 
-        Map<String, String> messageParams = getParamsFromArgs(method.getParameters(), args);
-
-        messageParams.forEach(callMessage::setParameter);
+        //get a map filled with the parsed arguments as parameters for the callMessage
+        //set a callMessage parameter for every keyvalue pair in the returned map
+        getParamsFromArgs(method.getParameters(), args).forEach(callMessage::setParameter);
 
         return callMessage;
     }

@@ -59,9 +59,12 @@ public class SkeletonInvocationHandler implements Skeleton{
             Object[] requestArgs = new Object[requestMethod.getParameters().length];
             int counter = 0;
 
+            // with this for loop i'll get the arguments needed to create the response object by invocation
             for (int i = 0; i < requestMethod.getParameters().length; i++) {
                 Parameter p = requestMethod.getParameters()[i];
 
+                // get the parameters from the requestMethod ( possible prefix will be result.age or result.name )
+                //
                 Map<String, String> params = getParamsFromPrefix(message.getParameters(), p.getName());
 
                 if (params.size() == 0) throw new IllegalArgumentException("could not recreate parameter");
@@ -75,10 +78,12 @@ public class SkeletonInvocationHandler implements Skeleton{
 
             Object responseObj = requestMethod.invoke(serverImplementation, requestArgs);
 
-            //Void method test
+
             if (requestMethod.getReturnType().equals(Void.TYPE)) {
+                //If our method is of type void there is no need to set any params ( send an empty reply )
                 response.setParameter("result", "Ok");
             } else {
+                //if our method is not of type void, we need to map the responseObj and set the response params for every key value pair in the map
                 parseObjectToMap("result", responseObj).forEach(response::setParameter);
             }
 

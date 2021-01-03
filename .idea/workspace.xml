@@ -5,32 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="498829e3-d4e4-4b98-8a74-9ec741731f29" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/be/kdg/distrib/skeletonFactory/SkeletonFactory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/be/kdg/distrib/util/ClassChecker.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/reflection.iml" beforeDir="false" afterPath="$PROJECT_DIR$/reflection.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/be/kdg/distrib/skeletonFactory/SkeletonInvocationHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/be/kdg/distrib/skeletonFactory/SkeletonInvocationHandler.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/be/kdg/distrib/stubFactory/StubInvocationHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/be/kdg/distrib/stubFactory/StubInvocationHandler.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/be/kdg/distrib/util/InvocationHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/be/kdg/distrib/util/InvocationHelper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/be/kdg/distrib/TestSkeletonFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/be/kdg/distrib/TestSkeletonFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/be/kdg/distrib/communication/MessageManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/be/kdg/distrib/communication/MessageManager.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/be/kdg/distrib/communication/MessageReaderWriter.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/be/kdg/distrib/communication/MessageReaderWriter.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/be/kdg/distrib/communication/MethodCallMessage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/be/kdg/distrib/communication/MethodCallMessage.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/be/kdg/distrib/communication/NameValuePair.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/be/kdg/distrib/communication/NameValuePair.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/be/kdg/distrib/communication/NetworkAddress.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/be/kdg/distrib/communication/NetworkAddress.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/be/kdg/distrib/skeletonFactory/Skeleton.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/be/kdg/distrib/skeletonFactory/Skeleton.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/be/kdg/distrib/stubFactory/StubInvocationHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/be/kdg/distrib/stubFactory/StubInvocationHandler.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/be/kdg/distrib/TestSkeletonFactory.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/be/kdg/distrib/TestSkeletonFactory.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/be/kdg/distrib/TestStubFactory.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/be/kdg/distrib/TestStubFactory.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/be/kdg/distrib/testclasses/TestImplementation.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/be/kdg/distrib/testclasses/TestImplementation.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/be/kdg/distrib/testclasses/TestInterface.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/be/kdg/distrib/testclasses/TestInterface.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/be/kdg/distrib/testclasses/TestInterface2.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/be/kdg/distrib/testclasses/TestInterface2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/be/kdg/distrib/testclasses/TestInterface3.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/be/kdg/distrib/testclasses/TestInterface3.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/be/kdg/distrib/testclasses/TestObject.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/be/kdg/distrib/testclasses/TestObject.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/be/kdg/distrib/testclasses/TestObject2.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/be/kdg/distrib/testclasses/TestObject2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/be/kdg/distrib/testclasses/TestSkeleton.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/be/kdg/distrib/testclasses/TestSkeleton.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -92,6 +71,7 @@
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
+    <property name="restartRequiresConfirmation" value="false" />
   </component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
@@ -355,6 +335,7 @@
       <workItem from="1575968329708" duration="81000" />
       <workItem from="1609673335489" duration="1185000" />
       <workItem from="1609674557951" duration="14361000" />
+      <workItem from="1609689965124" duration="6010000" />
     </task>
     <servers />
   </component>
