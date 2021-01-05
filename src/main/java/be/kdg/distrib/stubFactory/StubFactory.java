@@ -8,11 +8,11 @@ import java.lang.reflect.Proxy;
 
 public class StubFactory {
 
-    public static Object createStub(Class<?> aClass, String ip, int port) {
+    public static Object createStub(Class<?> stubClassType, String ip, int port) {
         NetworkAddress address = new NetworkAddress(ip, port);
 
         InvocationHandler invocationHandler = new StubInvocationHandler(address);
 
-        return Proxy.newProxyInstance(Thread.currentThread().getContextClassLoader(),new Class[] {aClass}, invocationHandler);
+        return Proxy.newProxyInstance(Thread.currentThread().getContextClassLoader(),new Class[] {stubClassType}, invocationHandler);
     }
 }

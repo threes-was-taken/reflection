@@ -21,12 +21,7 @@ public class StubInvocationHandler implements InvocationHandler {
 
     @Override
     public Object invoke(Object proxy, Method method, Object[] args) throws Throwable {
-        System.out.println(method.getName() + " invoked");
-        System.out.printf(" -> %s as return type\n", method.getReturnType().getSimpleName());
-
         MethodCallMessage callMessage = initMethodCall(args, method, this.messageManager.getMyAddress());
-
-        callMessage.getParameters().forEach((k,v) -> System.out.printf("\t%s PARAMS: %s = %s\n", callMessage.getMethodName().toUpperCase(), k, v));
 
         this.messageManager.send(callMessage, receiveAddress);
 

@@ -16,9 +16,9 @@ public class InvocationHelper {
 
     /**
      * This function will get the parameters from the given prefix
-     * @param parameters
-     * @param classPrefix
-     * @return
+     * @param parameters map of parameters
+     * @param classPrefix prefix that needs to be cut off ( e.g. result.age will become age if prefix is 'result')
+     * @return a new keyvalue map of string with no prefix attached to the parameters
      */
     public static Map<String, String> getParamsFromPrefix(Map<String, String> parameters, String classPrefix) {
         Map<String, String> responseParams = new HashMap<>();
@@ -60,18 +60,18 @@ public class InvocationHelper {
 
     /**
      * This function will create a keyValue map of the given object
-     * @param name parameter name
+     * @param parameterName parameter name
      * @param o object of parameter
      * @return string map of given object
      * @throws IllegalAccessException
      */
-    public static Map<String, String> parseObjectToMap(String name, Object o) throws IllegalAccessException {
+    public static Map<String, String> parseObjectToMap(String parameterName, Object o) throws IllegalAccessException {
         Map<String, String> objectMap = new HashMap<>();
 
         if (checkSimpleClass(o.getClass())){
             //no need to go over the fields of the given object if the type is simple ( e.g. int arg1 = 42 )
             //important to use String.valueOf(), some types cannot be cast to string via '(String) o' and this will give errors
-            objectMap.put(name, String.valueOf(o));
+            objectMap.put(parameterName, String.valueOf(o));
         }else {
             Field[] fields = o.getClass().getDeclaredFields();
 
@@ -80,7 +80,7 @@ public class InvocationHelper {
                 f.setAccessible(true);
 
                 //create extended name for complex objects ( e.g. person.age or car.model )
-                String complexName = name + "." + f.getName();
+                String complexName = parameterName + "." + f.getName();
 
                 //map the object with the extended name as key and the value of the field as the value
                 objectMap.put(complexName, String.valueOf(f.get(o)));

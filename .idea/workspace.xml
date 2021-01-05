@@ -6,6 +6,9 @@
   <component name="ChangeListManager">
     <list default="true" id="498829e3-d4e4-4b98-8a74-9ec741731f29" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/be/kdg/distrib/stubFactory/StubFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/be/kdg/distrib/stubFactory/StubFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/be/kdg/distrib/stubFactory/StubInvocationHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/be/kdg/distrib/stubFactory/StubInvocationHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/be/kdg/distrib/util/InvocationHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/be/kdg/distrib/util/InvocationHelper.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -77,6 +80,11 @@
       <recent name="be.kdg.stubFactory" />
       <recent name="be.kdg.componenten.stubFactory" />
     </key>
+  </component>
+  <component name="RunAnythingCache">
+    <option name="myCommands">
+      <command value="mvn install" />
+    </option>
   </component>
   <component name="RunManager" selected="JUnit.TestSkeletonFactory">
     <configuration default="true" type="Applet">
@@ -321,6 +329,8 @@
       <workItem from="1609673335489" duration="1185000" />
       <workItem from="1609674557951" duration="14361000" />
       <workItem from="1609689965124" duration="6715000" />
+      <workItem from="1609698481877" duration="594000" />
+      <workItem from="1609834433496" duration="701000" />
     </task>
     <servers />
   </component>
