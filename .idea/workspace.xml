@@ -5,10 +5,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="498829e3-d4e4-4b98-8a74-9ec741731f29" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/be/kdg/distrib/stubFactory/StubFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/be/kdg/distrib/stubFactory/StubFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/be/kdg/distrib/stubFactory/StubInvocationHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/be/kdg/distrib/stubFactory/StubInvocationHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/be/kdg/distrib/util/InvocationHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/be/kdg/distrib/util/InvocationHelper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/be/kdg/distrib/TestStubFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/be/kdg/distrib/TestStubFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/be/kdg/distrib/stubFactory/StubFactory.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/be/kdg/distrib/stubFactory/StubFactory.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/be/kdg/distrib/stubFactory/StubInvocationHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/be/kdg/distrib/stubFactory/StubInvocationHandler.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/be/kdg/distrib/util/InvocationHelper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/be/kdg/distrib/util/InvocationHelper.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/distrib-1.0.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/distrib-1.0.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-be.kdg.distrib.TestSkeletonFactory.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-be.kdg.distrib.TestSkeletonFactory.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-be.kdg.distrib.TestStubFactory.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-be.kdg.distrib.TestStubFactory.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/be.kdg.distrib.TestSkeletonFactory.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/be.kdg.distrib.TestSkeletonFactory.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/be.kdg.distrib.TestStubFactory.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/be.kdg.distrib.TestStubFactory.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -86,7 +95,7 @@
       <command value="mvn install" />
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.TestSkeletonFactory">
+  <component name="RunManager" selected="JUnit.TestStubFactory">
     <configuration default="true" type="Applet">
       <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
       <method v="2">
@@ -147,6 +156,19 @@
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -277,8 +299,8 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.TestSkeletonFactory" />
         <item itemvalue="JUnit.TestStubFactory" />
+        <item itemvalue="JUnit.TestSkeletonFactory" />
         <item itemvalue="JUnit.TestSkeletonFactory.testMessageWithWrongNumberOfParams" />
         <item itemvalue="JUnit.TestSkeletonFactory.testVoidMethod" />
         <item itemvalue="JUnit.TestStubFactory.testCreateClassWithRightMethods" />
@@ -330,7 +352,9 @@
       <workItem from="1609674557951" duration="14361000" />
       <workItem from="1609689965124" duration="6715000" />
       <workItem from="1609698481877" duration="594000" />
-      <workItem from="1609834433496" duration="701000" />
+      <workItem from="1609834433496" duration="1066000" />
+      <workItem from="1610268081052" duration="527000" />
+      <workItem from="1610268631050" duration="41000" />
     </task>
     <servers />
   </component>

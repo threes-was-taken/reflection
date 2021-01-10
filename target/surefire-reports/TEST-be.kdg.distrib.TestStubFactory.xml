@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="23" failures="0" name="be.kdg.distrib.TestStubFactory" time="0.042" errors="0" skipped="0">
+<testsuite tests="23" failures="0" name="be.kdg.distrib.TestStubFactory" time="0.037" errors="0" skipped="0">
   <properties>
     <property name="idea.version" value="2020.3"/>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="java.vm.version" value="11.0.8+10-LTS"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-11.0.8\bin"/>
     <property name="user.country.format" value="BE"/>
-    <property name="maven.multiModuleProjectDirectory" value="D:\Projects\School\reflection"/>
+    <property name="maven.multiModuleProjectDirectory" value="D:\Projects\School\Programmeren3\reflection-exercise"/>
     <property name="java.vm.vendor" value="Oracle Corporation"/>
     <property name="java.vendor.url" value="https://openjdk.java.net/"/>
     <property name="guice.disable.misplaced.annotation.check" value="true"/>
@@ -17,7 +17,7 @@
     <property name="user.country" value="US"/>
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
-    <property name="user.dir" value="D:\Projects\School\reflection"/>
+    <property name="user.dir" value="D:\Projects\School\Programmeren3\reflection-exercise"/>
     <property name="java.vm.compressedOopsMode" value="Zero based"/>
     <property name="java.runtime.version" value="11.0.8+10-LTS"/>
     <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
@@ -31,7 +31,7 @@
     <property name="maven.ext.class.path" value="C:\Program Files\JetBrains\IntelliJ IDEA 2020.2.2\plugins\maven\lib\maven-event-listener.jar"/>
     <property name="classworlds.conf" value="C:\Program Files\JetBrains\IntelliJ IDEA 2020.2.2\plugins\maven\lib\maven3\bin\m2.conf"/>
     <property name="sun.jnu.encoding" value="Cp1252"/>
-    <property name="java.library.path" value="C:\Program Files\Java\jdk-11.0.8\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Python38\Scripts\;C:\Python38\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\Program Files\nodejs\;C:\ProgramData\chocolatey\bin;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\Git\cmd;C:\Program Files\dotnet\;C:\Program Files (x86)\Yarn\bin\;C:\Users\Dries\.windows-build-tools\python27\;C:\Ruby25-x64\bin;C:\Ruby26-x64\bin;C:\Users\Dries\AppData\Local\Programs\Python\Python38-32\Scripts\;C:\Users\Dries\AppData\Local\Programs\Python\Python38-32\;C:\Users\Dries\AppData\Local\Microsoft\WindowsApps;C:\Users\Dries\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\Dries\AppData\Roaming\npm;C:\Users\Dries\.dotnet\tools;C:\Users\Dries\AppData\Local\GitHubDesktop\bin;C:\Program Files\JetBrains\IntelliJ IDEA 2020.2.2\bin;;C:\Users\Dries\AppData\Local\Yarn\bin;C:\Users\Dries\.dotnet\tools;."/>
+    <property name="java.library.path" value="C:\Program Files\Java\jdk-11.0.8\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Python38\Scripts\;C:\Python38\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\ProgramData\chocolatey\bin;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\Git\cmd;C:\Program Files\dotnet\;C:\Program Files (x86)\Yarn\bin\;C:\Program Files\nodejs\;C:\Program Files\Docker\Docker\resources\bin;C:\ProgramData\DockerDesktop\version-bin;C:\Users\Dries\.windows-build-tools\python27\;C:\Ruby25-x64\bin;C:\Ruby26-x64\bin;C:\Users\Dries\AppData\Local\Programs\Python\Python38-32\Scripts\;C:\Users\Dries\AppData\Local\Programs\Python\Python38-32\;C:\Users\Dries\AppData\Local\Microsoft\WindowsApps;C:\Users\Dries\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\Dries\.dotnet\tools;C:\Users\Dries\AppData\Local\GitHubDesktop\bin;C:\Program Files\JetBrains\IntelliJ IDEA 2020.2.2\bin;;C:\Users\Dries\AppData\Local\Yarn\bin;C:\Users\Dries\.dotnet\tools;C:\Users\Dries\AppData\Roaming\npm;."/>
     <property name="maven.conf" value="C:\Program Files\JetBrains\IntelliJ IDEA 2020.2.2\plugins\maven\lib\maven3/conf"/>
     <property name="jdk.debug" value="release"/>
     <property name="java.class.version" value="55.0"/>
@@ -65,16 +65,16 @@
     <property name="sun.desktop" value="windows"/>
     <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
-  <testcase classname="be.kdg.distrib.TestStubFactory" name="testCreateClassWithRightMethods" time="0.001"/>
+  <testcase classname="be.kdg.distrib.TestStubFactory" name="testCreateClassWithRightMethods" time="0"/>
   <testcase classname="be.kdg.distrib.TestStubFactory" name="testWithStringReturnValue" time="0.001"/>
-  <testcase classname="be.kdg.distrib.TestStubFactory" name="testWithBooleanReturnValue2" time="0.006"/>
+  <testcase classname="be.kdg.distrib.TestStubFactory" name="testWithBooleanReturnValue2" time="0.005"/>
   <testcase classname="be.kdg.distrib.TestStubFactory" name="testVoidVoid" time="0.001"/>
   <testcase classname="be.kdg.distrib.TestStubFactory" name="testTryToCastToWrongClass" time="0.001"/>
-  <testcase classname="be.kdg.distrib.TestStubFactory" name="testWithMoreParams" time="0.006"/>
-  <testcase classname="be.kdg.distrib.TestStubFactory" name="testWithIntParam" time="0.001"/>
-  <testcase classname="be.kdg.distrib.TestStubFactory" name="testWithIntReturnValue2" time="0.001"/>
+  <testcase classname="be.kdg.distrib.TestStubFactory" name="testWithMoreParams" time="0.003"/>
+  <testcase classname="be.kdg.distrib.TestStubFactory" name="testWithIntParam" time="0.002"/>
+  <testcase classname="be.kdg.distrib.TestStubFactory" name="testWithIntReturnValue2" time="0.004"/>
   <testcase classname="be.kdg.distrib.TestStubFactory" name="testWithStringReturnValue2" time="0.001"/>
-  <testcase classname="be.kdg.distrib.TestStubFactory" name="testWithEverything" time="0.005"/>
+  <testcase classname="be.kdg.distrib.TestStubFactory" name="testWithEverything" time="0.004"/>
   <testcase classname="be.kdg.distrib.TestStubFactory" name="testCreateClassWithDerivedInterface" time="0.001"/>
   <testcase classname="be.kdg.distrib.TestStubFactory" name="testWithCharReturnValue2" time="0.001"/>
   <testcase classname="be.kdg.distrib.TestStubFactory" name="testWithCharReturnValue" time="0.001"/>
@@ -82,10 +82,10 @@
   <testcase classname="be.kdg.distrib.TestStubFactory" name="testWithIntReturnValue" time="0.001"/>
   <testcase classname="be.kdg.distrib.TestStubFactory" name="testWithObjectReturnValue" time="0.002"/>
   <testcase classname="be.kdg.distrib.TestStubFactory" name="testWithObjectReturnValue2" time="0.001"/>
-  <testcase classname="be.kdg.distrib.TestStubFactory" name="testWithObjectReturnValue3" time="0.002"/>
+  <testcase classname="be.kdg.distrib.TestStubFactory" name="testWithObjectReturnValue3" time="0.001"/>
   <testcase classname="be.kdg.distrib.TestStubFactory" name="testCreateClassFromOtherInterface" time="0.001"/>
   <testcase classname="be.kdg.distrib.TestStubFactory" name="testWithOneParam" time="0.002"/>
-  <testcase classname="be.kdg.distrib.TestStubFactory" name="testCreateStubFromObject" time="0.001"/>
+  <testcase classname="be.kdg.distrib.TestStubFactory" name="testCreateStubFromObject" time="0"/>
   <testcase classname="be.kdg.distrib.TestStubFactory" name="testWithBooleanReturnValue" time="0.001"/>
-  <testcase classname="be.kdg.distrib.TestStubFactory" name="testWithObjectParams" time="0.002"/>
+  <testcase classname="be.kdg.distrib.TestStubFactory" name="testWithObjectParams" time="0.001"/>
 </testsuite>

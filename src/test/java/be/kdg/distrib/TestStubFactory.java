@@ -1,15 +1,13 @@
 package be.kdg.distrib;
 
-import be.kdg.distrib.stubFactory.StubFactory;
 import be.kdg.distrib.communication.MethodCallMessage;
 import be.kdg.distrib.communication.NetworkAddress;
+import be.kdg.distrib.stubFactory.StubFactory;
 import be.kdg.distrib.testclasses.*;
 import org.junit.Before;
 import org.junit.Test;
 
-import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertFalse;
-import static org.junit.Assert.assertTrue;
+import static org.junit.Assert.*;
 
 public class TestStubFactory {
     private int port;
